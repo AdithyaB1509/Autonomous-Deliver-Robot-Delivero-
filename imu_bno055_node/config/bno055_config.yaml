@@ -1,0 +1,19 @@
+imu_hardware_driver:
+  ros__parameters:
+    # Sensor Offsets & Deadzones
+    deadzones:
+      accel: 0.1
+      gyro: 0.05
+    gyro_offsets:
+      x: 0.00921927951658295
+      y: -0.00016421108553710097
+      z: -0.0013371474108021077
+    mag_offsets:
+      x: 1008.53125
+      y: 8.40625
+      z: -12.78125
+      
+    # Essential Connection Params (Adjust if needed)
+    i2c_bus: 1
+    i2c_addr: 0x28
+    frame_id: "imu_link"
